@@ -61,7 +61,7 @@ def pid(self):
     	self.out_pitch=abs(self.lat_error)*100.0
     	self.command.rcPitch=(self.drone_orientation_euler[1]-self.out_pitch)
     	self.command.publish(self.pitch_out)
-    if(self.lat_error>=0);
+    if(self.lat_error>=0):
         self.out_pitch=abs(self.lat_error)*100.0
         self.command.rcPitch=(self.drone_orientation_euler[1]+self.out_pitch)
     if(self.long_error<0):
