@@ -53,8 +53,8 @@ def pid(self):
 	self.alt_iterm=(self.alt_iterm+self.alt_error)*self.Ki
 
 	self.output_lat=self.Kp*self.lat_error+self.lat_iterm+self.Kd*(self.lat_diff_err)
-    self.output_long=self.Kp*self.long_error+self.long_iterm+self.Kd*(self.long_diff_err)
-    self.output_alt=self.Kp*self.alt_error+self.alt_iterm+self.Kd*(self.alt_diff_err)
+        self.output_long=self.Kp*self.long_error+self.long_iterm+self.Kd*(self.long_diff_err)
+        self.output_alt=self.Kp*self.alt_error+self.alt_iterm+self.Kd*(self.alt_diff_err)
 
 
     if(self.lat_error<0):
